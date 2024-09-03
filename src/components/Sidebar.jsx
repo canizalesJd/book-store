@@ -3,8 +3,8 @@ import {Logo} from "./Logo"
 function Sidebar() {
 
   return (
-    <div className="flex flex-col w-[300px] max-w-[40vw]">
-        <div className="flex pt-5 pb-2 px-10 items-center">
+    <div className="flex flex-col w-[210px] max-w-[40vw] justify-start items-center py-5">
+        <div className="flex pb-2 px-10 items-center">
           <h2 className="font-bold text-gray-700">Categories</h2>
         </div>
         <div className="flex flex-col items-center">
