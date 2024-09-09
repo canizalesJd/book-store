@@ -21,11 +21,13 @@ export default function App() {
       <Header className="col-span-2" /> {/* Header spans across both columns */}
       <div className="grid grid-cols-[250px_1fr] gap-10">
         <Sidebar className="bg-gray-200" /> {/* Sidebar takes a fixed width of 250px */}
-        <div className="p-10 grid grid-cols-5 gap-10 items-start">
-        {books["travel"] && books["travel"].slice(0, 11).map((book, index) => (
-          <ProductCard key={index} book={book} />
-        ))}
-      </div>
+        <div className="container mx-auto p-10">
+          <div className="grid md:grid-cols-2 sm:grid-cols-1 xl:grid-cols-5 lg:grid-cols-4 gap-10">
+            {books["travel"] && books["travel"].slice(0, 6).map((book, index) => (
+              <ProductCard key={index} book={book} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )

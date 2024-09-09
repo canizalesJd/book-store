@@ -4,7 +4,7 @@ function ProductCard({book}) {
             <img
             src={book.image_url}
             alt=""
-            className="w-full rounded object-cover h-[25rem]"
+            className="w-full rounded object-cover"
             />
 
         <div className="mt-3">
